@@ -7,11 +7,11 @@ export default function Pantalla1 (){
 <Fragment> <div>
     <h1>MK FIX</h1></div> 
     <form>
+      <button >Crear Incidencia</button> <br/>
+      
+      <button>Mis Incidencias</button><br/>
 
-  
-
-
-
+      <button>Urgencia</button>
 
       </form>
 
