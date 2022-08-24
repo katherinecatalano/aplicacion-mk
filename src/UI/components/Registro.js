@@ -26,9 +26,10 @@ export default function Registro (){
 
                 </div>
                 <div>
-                    <label htmlFor="contraseña">Contraseña</label>
+                    {/* <label htmlFor="contraseña">Contraseña</label>
                     <br/>
-                    <input type="pasword" id="contraseña" name="contraseña" placeholder=""></input>
+                    <input type="pasword" id="contraseña" name="contraseña" placeholder=""></input> */}
+                    <Input nombre="Ingrese Contraseña" place="***"></Input>
                 </div>
                 <button type= "submit">Iniciar Sesion</button>
             </form>

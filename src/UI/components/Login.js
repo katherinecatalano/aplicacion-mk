@@ -14,7 +14,7 @@ export default function Login (){
                 <Input nombre="Numero de DNI" place="***"></Input>
             </div>
             <div>
-                <button>Aceptar</button>
+                <button type="submit">Aceptar</button>
             </div>
 
 

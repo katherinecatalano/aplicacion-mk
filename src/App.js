@@ -9,9 +9,9 @@ import Login from './UI/components/Login';
   return (
     
     <view>
-{/* 
-      <Registro></Registro> */}
-      <Login></Login>
+
+      <Registro></Registro> 
+      {/* <Login></Login> */}
 
     </view>
 
