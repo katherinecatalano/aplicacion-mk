@@ -18,9 +18,12 @@ export default function Registro (){
 
                 </div>
                 <div>
-                    <label htmlFor="correo">E-mail</label>
+                    {/* <label htmlFor="correo">E-mail</label>
                     <br/>
-                    <input type= "text" id="correo" name="correo" placeholder="correo electronico"></input>
+                    <input type= "text" id="correo" name="correo" placeholder="correo electronico"></input> */}
+                    <Input nombre="Correo Electronico" place="pepito@email.com"></Input>
+                    
+
                 </div>
                 <div>
                     <label htmlFor="contraseña">Contraseña</label>
