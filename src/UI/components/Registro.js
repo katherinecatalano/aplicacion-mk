@@ -1,4 +1,5 @@
 import React, { Fragment } from "react";
+import Input from "./Input";
 
 export default function Registro (){
     return (
@@ -8,14 +9,13 @@ export default function Registro (){
                 <p>Complete los siguientes datos</p>
                 
                 <div>
-                    <label htmlFor="nombre">Nombre completo</label>
-                    <br/>
-                    <input type="text" id="nombre" name="nombre" placeholder="pepito"></input>
+                    <Input nombre="Nombre Completo"  place="pepito"></Input>
                 </div>
                 <div>
-                    <label htmlFor="dni">numero de dni</label>
-                    <br/>
-                    <input type="text" id="numero" name="numero" placeholder="**"></input>
+              
+
+                    <Input nombre="Numero de DNI"  place="***"></Input>
+
                 </div>
                 <div>
                     <label htmlFor="correo">E-mail</label>
