@@ -27,6 +27,7 @@ export default function Registro (){
                     <br/>
                     <input type="pasword" id="contraseña" name="contraseña" placeholder=""></input>
                 </div>
+                <button type= "submit">Iniciar Sesion</button>
             </form>
         </Fragment>      
     )
