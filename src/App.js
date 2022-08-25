@@ -15,6 +15,7 @@ import Incidencia from './UI/components/Incidencia';
       <Login></Login>
       <Pantalla1></Pantalla1>
       <Incidencia></Incidencia>
+      <comentarios></comentarios>
       {/* <Listas></Listas> */}
 
     </view>
