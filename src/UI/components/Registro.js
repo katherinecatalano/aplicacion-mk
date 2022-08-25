@@ -27,6 +27,9 @@ export default function Registro (){
                     <br/>
                     <input type="pasword" id="contraseña" name="contraseña" placeholder=""></input>
                 </div>
+                <label htmlFor="escuela">escuela</label>
+                <br/>
+                <input type="escuela" id="numero"name ="numero"placeholder=""></input>
             </form>
         </Fragment>      
     )
