@@ -5,6 +5,7 @@ import Login from './UI/components/Login';
 import Pantalla1 from './UI/components/Pantalla1';
 import Incidencia from './UI/components/Incidencia';
 // import Listas from './UI/components/Listas';
+import Registroincidencia from './UI/components/Registroincidencia';
 
  export default function App() {
   return (
@@ -16,6 +17,7 @@ import Incidencia from './UI/components/Incidencia';
       <Pantalla1></Pantalla1>
       <Incidencia></Incidencia>
       {/* <Listas></Listas> */}
+      <Registroincidencia></Registroincidencia>
 
     </view>
 
