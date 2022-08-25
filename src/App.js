@@ -1,5 +1,4 @@
 import React, {} from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Registro from './UI/components/Registro';
 import Login from './UI/components/Login';
@@ -11,8 +10,8 @@ import Pantalla1 from './UI/components/Pantalla1';
     
     <view>
 
-      {/* <Registro></Registro>  */}
-      {/* <Login></Login> */}
+      <Registro></Registro>
+      <Login></Login>
       <Pantalla1></Pantalla1>
 
     </view>

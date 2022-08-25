@@ -2,13 +2,13 @@ import React, { Fragment } from "react";
 
 export default function pantallainicio (){
 
-    <Fragment>
+    <View>
         <form>
             <label>
-                
+
             </label>
             
 
         </form>
-    </Fragment>
+    </View>
 }
