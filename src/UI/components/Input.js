@@ -6,6 +6,7 @@ export default function Input(props) {
             <label htmlFor="numero">{props.nombre}</label><br/>
             <input className="input" type="text" id="numero" name="numero" placeholder={props.place}/>
 
+
         </Fragment>
 
     )
