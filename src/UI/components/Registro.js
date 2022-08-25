@@ -9,12 +9,12 @@ export default function Registro (){
                 <p>Complete los siguientes datos</p>
                 
                 <div>
-                    <Input nombre="Nombre Completo"  place="pepito"></Input>
+                    <Input nombre="Nombre Completo"  place="melisa"></Input>
                 </div>
                 <div>
               
 
-                    <Input nombre="Numero de DNI"  place="***"></Input>
+                    <Input nombre="Numero de DNI"  place="numero"></Input>
 
                 </div>
                 <div>
