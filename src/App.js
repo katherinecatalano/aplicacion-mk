@@ -16,6 +16,7 @@ import Registroincidencia from './UI/components/Registroincidencia';
       <Login></Login>
       <Pantalla1></Pantalla1>
       <Incidencia></Incidencia>
+      <comentarios></comentarios>
       {/* <Listas></Listas> */}
       <Registroincidencia></Registroincidencia>
 
