@@ -5,7 +5,7 @@ export default function Registro (){
         <Fragment>
             <form>
                 <h1>Registro</h1>
-                <p>Complete con sus datos</p>
+                <p>Complete con sus datos personales</p>
                 
                 <div>
                     <label htmlFor="nombre">Nombre completo</label>
