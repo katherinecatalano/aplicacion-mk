@@ -5,8 +5,8 @@ export default function Registro (){
     return (
         <Fragment>
             <form>
-                <h1>Registro</h1>
-                <p>Complete los siguientes datos</p>
+                <h1>Registrarse</h1>
+                <h4>Complete con sus datos</h4>
                 
                 <div>
                     <Input nombre="Nombre Completo"  place="melisa"></Input>
