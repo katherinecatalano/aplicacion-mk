@@ -15,6 +15,10 @@ export default function Login (){
                 <button></button>
             </div>
 
+            <div>
+            <input type="text" id="cerrar sesion"name="cerrar"placeholder=""></input>
+            </div>
+
 
             </form>
         </Fragment>
