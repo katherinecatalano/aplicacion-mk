@@ -4,8 +4,8 @@ export default function Pantalla1 (){
    return (
 
 <Fragment>
-<div>
-    <h1>MK FIX</h1>
+<div id= "box color" >
+    <h1>MK FIX</h1> 
 </div>
 </Fragment>
   ) 
