@@ -5,11 +5,12 @@ export default function Registro (){
     return (
         <Fragment>
             <form>
-                <h1>Registro</h1>
+                <h1>MK FIX</h1>
+                <h3>Registro</h3>
                 <p>Complete los siguientes datos</p>
                 
                 <div>
-                    <Input nombre="Nombre Completo"  place="melisa"></Input>
+                    <Input nombre="Nombre Completo"  place="Nombre"></Input>
                 </div>
                 <div>
               

@@ -6,7 +6,8 @@ export default function Login (){
     return (
         <Fragment>
             <form>
-            <h1>Inicio de sesion</h1>
+                <h1>MK FIX</h1>
+            <h3>Inicio de sesion</h3>
 
             <div>
                 {/* <label htmlFor="numero">numero de dni</label><br/> */}
