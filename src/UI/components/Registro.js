@@ -1,5 +1,11 @@
 import React, { Fragment } from "react";
 import Input from "./Input";
+import{
+    BrowseRouter as Router,
+    Routes,
+    Route,
+    Link
+    }From "react-router-dom";
 
 export default function Registro (){
     return (
@@ -32,7 +38,9 @@ export default function Registro (){
                     <input type="pasword" id="contraseña" name="contraseña" placeholder=""></input> */}
                     <Input nombre="Ingrese Contraseña" place="***"></Input>
                 </div>
-                <button type= "submit">Iniciar Sesion</button>
+                <link className="registrar-login"
+to="/Login>Login</link>
+                // <button type= "submit">Iniciar Sesion</button>
             </form>
         </Fragment>      
     )
