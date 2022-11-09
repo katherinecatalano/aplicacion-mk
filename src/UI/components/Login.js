@@ -1,11 +1,5 @@
 import React, { Fragment } from "react";
 import Input from "./Input";
-import{
-    BrowseRouter as Router,
-    Routes,
-    Route,
-    Link
-    }From "react-router-dom";
 
 export default function Login (){
 
@@ -21,10 +15,8 @@ export default function Login (){
                 <Input nombre="Numero de DNI" place="***"></Input>
             </div>
             <div>
-                // <button type="submit">Aceptar</button>
-                <Link className=registra login"
-to="/Registro">¿no tienes cuenta?
-Registrate</link>
+                 <button type="submit">Aceptar</button>
+                <link className="registrar-login" to="/Registro">¿no tienes cuenta? Registrate </link>
             </div>
 
 
