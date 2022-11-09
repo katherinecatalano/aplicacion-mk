@@ -1,16 +1,11 @@
 import React, { Fragment } from "react";
 import Input from "./Input";
-import{
-    BrowseRouter as Router,
-    Routes,
-    Route,
-    Link
-    }From "react-router-dom";
+/*import { BrowseRouter as Router, Routes, Route,Link} from 'react-router-dom';*/
+
 
 export default function Registro (){
     return (
         <Fragment>
-            <form>
                 <h1>MK FIX</h1>
                 <h3>Registro</h3>
                 <p>Complete los siguientes datos</p>
@@ -33,15 +28,13 @@ export default function Registro (){
 
                 </div>
                 <div>
-                    {/* <label htmlFor="contraseña">Contraseña</label>
+                     <label htmlFor="contraseña">Contraseña</label>
                     <br/>
-                    <input type="pasword" id="contraseña" name="contraseña" placeholder=""></input> */}
+                    <input type="pasword" id="contraseña" name="contraseña" placeholder=""></input> 
                     <Input nombre="Ingrese Contraseña" place="***"></Input>
                 </div>
-                <link className="registrar-login"
-to="/Login>Login</link>
-                // <button type= "submit">Iniciar Sesion</button>
-            </form>
-        </Fragment>      
+                <link className="registrar-login"  to="/Login">Login</link>
+                 <button type= "submit">Iniciar Sesion</button>
+        </Fragment>
     )
 }
