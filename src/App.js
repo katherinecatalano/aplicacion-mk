@@ -7,7 +7,6 @@ import Incidencia from './UI/components/Incidencia';
 /*import Listas from './UI/components/Listas';*/
 import Registroincidencia from './UI/components/Registroincidencia';
 import { Router } from 'react-router-dom';
-import { Route } from 'react-router-dom';
 import Boton from './UI/components/Boton';
 
 export default function App() {
@@ -23,24 +22,12 @@ export default function App() {
       <Incidencia></Incidencia>
         {/* <Listas></Listas> */}
       <Registroincidencia></Registroincidencia>
+      <Boton></Boton>
     </view>
     </Fragment>
     {Router}
     </div>
 
 
-  )
-}
-
-function App() {
-  return(
-    <SafeAreaView style = {[styles.Container]}>
-
-      <Boton></Boton>
-
-
-    </SafeAreaView>
-
-  
   )
 }
