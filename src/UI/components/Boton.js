@@ -1,13 +1,15 @@
-import React from "react";
+/**import React from "react";
 import {View, Text } from 'react-native';
 
 
-const Boton = () => {
+const Boton = () =>{
     return (
-        <View style = { styles.buttonContainer } >
+        <View style={styles.buttonContainer}>
             <Text>Boton</Text>
-        </<View>
+        <View>
     )
+    
 }
 
-export default Boton
+
+*/
