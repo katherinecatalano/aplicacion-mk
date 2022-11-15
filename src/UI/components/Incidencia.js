@@ -1,6 +1,6 @@
-import React  from "react";
+/*import React  from "react";
 
-function Incidencia (){
+export default function Incidencia (){
     return(
         <view>
             <h1>MK FIX</h1><br/>
@@ -18,11 +18,4 @@ function Incidencia (){
     )
 
 
-}
-export function Incidencia
-
-
-
-
-
-
+    }*/
