@@ -1,13 +1,15 @@
-import React from 'react';
-import Boton from './UI/components/Boton';
+import React, { Fragment } from 'react';
+import Login from './UI/components/Login';
 
-function App(){
 
-  return(
-    <SafeAreaView style = {[ styles.Container]}>
-    
-    <Boton/>
-    <Boton/>
-    </SafeAreaView>
-  )
-};
+export default function App() {
+  return (
+    <Fragment>
+      <h1>MK FIX</h1>
+
+      {<Login/>}
+    </Fragment>
+  );
+
+
+}
