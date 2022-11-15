@@ -8,6 +8,7 @@ import Incidencia from './UI/components/Incidencia';
 import Registroincidencia from './UI/components/Registroincidencia';
 import { Router } from 'react-router-dom';
 import { Route } from 'react-router-dom';
+import Boton from './UI/components/Boton';
 
 export default function App() {
   return (
@@ -28,5 +29,18 @@ export default function App() {
     </div>
 
 
+  )
+}
+
+function App() {
+  return(
+    <SafeAreaView style = {[styles.Container]}>
+
+      <Boton></Boton>
+
+
+    </SafeAreaView>
+
+  
   )
 }
