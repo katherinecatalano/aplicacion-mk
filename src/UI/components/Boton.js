@@ -1,10 +1,12 @@
 import React from "react";
+import {View, Text } from 'react-native';
+
 
 const Boton = () => {
     return (
-        <view>
-            <text>Boton</text>
-        </view>
+        <View style = { styles.buttonContainer } >
+            <Text>Boton</Text>
+        </<View>
     )
 }
 
