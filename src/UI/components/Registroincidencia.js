@@ -10,11 +10,17 @@ function Registroincidencia() {
 
     const savePerson = () => {
         savePersonName(personName);
+
     }
+
+    useEffect(effect() => {
+        getPersonsData();
+
+    }, deps: [])
 
     const getPersonsData = async() {
         const p = await getPersons();
-        console.log(p);
+        console.log(p.docs[0].data());
         setPersons(p);
 
     }
@@ -26,7 +32,7 @@ function Registroincidencia() {
         onChange = { e => setPersonName(e.target.value) }
         /> <button onClick={savePerson}>Salvar</button >
         <
-        /div>>
+        /div>
     );
 }
 
