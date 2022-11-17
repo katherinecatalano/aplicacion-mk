@@ -6,3 +6,9 @@ export const savePersonName = (name) => {
     addDoc(collection(db, 'persons'), { name });
 
 }
+
+
+export const getPersons = async() => {
+    const result = await getDocs(query(collection(db, 'persons')));
+    return result;
+}
