@@ -3,12 +3,16 @@ import { useState } from 'react';
 
 function Registroincidencia() {
 
-    const [personName, setPersonName]
+    const [personName, setPersonName] = useState(initialState null);
 
     return ( <
         div classname = "incidencia" >
         <
-        input type = "text" > < /input> </div >
+        input type = "text"
+        onChange = { e => setPersonName(e.target.value) }
+        /> <button onclick = {}>Salvar</button >
+        <
+        /div >
     );
 }
 
