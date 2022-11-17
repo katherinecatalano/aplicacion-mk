@@ -1,15 +1,14 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import Login from './UI/components/Login';
+import Inicio from './UI/components/Inicio';
 
 
-export default function App() {
+function App() {
   return (
-    <Fragment>
-      <h1>MK FIX</h1>
-
-      {<Login/>}
-    </Fragment>
-  );
-
-
+    <div>
+      <Login></Login>
+    </div>
+  )
 }
+
+export default App;
