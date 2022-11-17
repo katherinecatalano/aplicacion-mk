@@ -1,4 +1,7 @@
 import React from "react";
+import 'boostrap';
+import Checkbox from '@mui/material/Checkbox';
+'
 function Login (){
 
     return (
@@ -40,7 +43,7 @@ export default Login;
           <Typography component="h1" variant="h5">
             Inicio de Sesión
           </Typography>
-          
+
           <Box component="form" onSubmit={handleSubmit} noValidate sx={{ mt: 1 }}>
             <TextField
               margin="normal"
@@ -74,22 +77,21 @@ export default Login;
             >
               Iniciar Sesión
             </Button>
-            <Grid container>
-              <Grid item xs>
+        
                 <Link href="#" variant="body2">
                   Olvidaste tu contraseña?
                 </Link>
-              </Grid>
-              <Grid item>
+            
+              
                 <Link href="#" variant="body2">
                   {"Nuevo usuario? Registarse"}
                 </Link>
-              </Grid>
-            </Grid>
+            
+        
           </Box>
         </Box>
         <Copyright sx={{ mt: 7, mb: 4 }}></Copyright>
-      </Container>
+    
     </ThemeProvider>
   );
 }
