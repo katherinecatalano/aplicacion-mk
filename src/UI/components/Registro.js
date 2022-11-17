@@ -2,7 +2,7 @@ import React,  from "react";
 import Input from "./Input";
 /*import { BrowseRouter as Router, Routes, Route,Link} from 'react-router-dom';*/
 
-<<<<<<< HEAD
+ HEAD
 import './app.css';
 export default function App (){
     return (
@@ -41,7 +41,7 @@ export default function App (){
 
                  </div>
         
-=======
+
 
 export default function Registro() {
     return ( <
@@ -91,8 +91,8 @@ export default function Registro() {
         /div> <
         link className = "registrar-login"
         to = "/Login" > Login < /link> <
-        button type = "submit" > Iniciar Sesion < /button> <
-        /Fragment>
->>>>>>> 1b77393f4ce63acf9d214f5d55dc02f2c0835616
+        button type = "submit" > Iniciar Sesion < /button> 
+        </Fragment>
+
     )
 }

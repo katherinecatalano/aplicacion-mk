@@ -11,6 +11,18 @@ function Registroincidencia() {
     }
 
     return ( <
+<<<<<<< HEAD
+    <h1> MK FIX </h1> <br/>
+        
+        <p> Registsro de incidencia </p>
+    )
+<ol> listas
+    <li>categoria</li>
+    <li></li>
+</ol>
+
+}
+=======
         div classname = "incidencia" >
         <
         input type = "text"
@@ -22,3 +34,4 @@ function Registroincidencia() {
 }
 
 export default Registroincidencia;
+>>>>>>> 980de1f4e962f8c231941b1b4b7b6fc9a7ea400d
