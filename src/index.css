@@ -1,3 +1,18 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.Registro{
+  background-color: blueviolet;
+
+}
+
+
 body {
   
   margin: 2;
@@ -13,3 +28,4 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+

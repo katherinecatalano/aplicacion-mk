@@ -1,26 +1,27 @@
-import React, { Fragment } from "react";
-import Input from "./Input";
-
-export default function Login (){
+import React from "react";
+function Login (){
 
     return (
-        <Fragment>
-            <form>
+       
+            <div>
                 <h1>MK FIX</h1>
             <h3>Inicio de sesion</h3>
+            <h3>Registrarse</h3>
 
             <div>
                 {/* <label htmlFor="numero">numero de dni</label><br/> */}
                 {/* <input type="text" id="numero" name="numero" placeholder="Introduzca su N° de dni"></input> */}
-                <Input nombre="Numero de DNI" place="***"></Input>
+                <button nombre="Numero de DNI" place="***"> login</button> 
+               
             </div>
             <div>
                  <button type="submit">Aceptar</button>
-                <link className="registrar-login" to="/Registro">¿no tienes cuenta? Registrate </link>
+                <button className="registrar-login" to="/Registro">¿no tienes cuenta? Registrate </button>
             </div>
 
 
-            </form>
-        </Fragment>
+            </div>
     )
-}
+};
+
+export default Login;
