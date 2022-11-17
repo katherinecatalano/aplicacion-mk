@@ -1,12 +1,15 @@
 import React from "react";
+import { useState } from 'react';
 
-export default function Registroincidencia() {
+function Registroincidencia() {
+
+    const [personName, setPersonName]
 
     return ( <
-        > < h1 > MK FIX < /h1><br / >
+        div classname = "incidencia" >
         <
-        p > Registro de incidencia < /p></ >
-    )
-
-
+        input type = "text" > < /input> </div >
+    );
 }
+
+export default Registroincidencia;
