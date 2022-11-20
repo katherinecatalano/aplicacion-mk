@@ -7,3 +7,11 @@ export const savePersonName = (name) => {
 
 }
 
+<<<<<<< HEAD
+=======
+
+export const getPersons = async() => {
+    const result = await getDocs(query(collection(db, 'persons')));
+    return result;
+}
+>>>>>>> 35828789106fb7c19cafdac68feefb944872969a
