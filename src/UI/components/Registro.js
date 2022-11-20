@@ -15,9 +15,9 @@ export default function App (){
                     <Input nombre="Nombre Completo"  place="Nombre"></Input>
                     <Input id "nombre completo" name= "nombre" value ""</Input>
                 
-        </div>
-
-                    nombre="Numero de DNI"  place="numero">
+    
+</div>
+                nombre="Numero de DNI"  place="numero">
 
                 
                 <div>
@@ -25,12 +25,11 @@ export default function App (){
                     <br/>
                     <input type= "text" id="correo" name="correo" placeholder="correo electronico"></input> */}
                     <Input nombre="Correo Electronico" place="pepito@email.com"></Input>
-                    
+                    </div>
 
                 </div>
-
-                <div>
                 
+                <div>
                      <label htmlFor="contraseña">Contraseña</label>
                     <br/>
                     <input type="pasword" id="contraseña" name="contraseña" placeholder=""></input> 
@@ -43,56 +42,65 @@ export default function App (){
         
 
 
-export default function Registro() {
-    return ( <
-        Fragment >
-        <
-        h1 > MK FIX < /h1> <
-        h3 > Registro < /h3> <
-        p > Complete los siguientes datos < /p>
+export default function Registro() 
+    return() <{
 
-        <
-        div >
-        <
-        Input nombre = "Nombre Completo"
-        place = "Nombre" > < /Input> <
-        /div> <
-        div >
+    
+     Fragment{
+
+     
+
+        
+        
+       <h1> MK FIX </h1> 
+       
+        <h3> Registro </h3> 
+        <p>  Complete los siguientes datos</p>  
+
+        <div>
+
+        <Input nombre = "Nombre Completo"
+        <place = "Nombre" > < /Input> <
+        </div> < div >
 
 
-        <
-        Input nombre = "Numero de DNI"
+        <Input nombre = "Numero de DNI"
         place = "numero" > < /Input>
 
-        <
-        /div> <
-        div > {
+    )
+
+
+        </div> 
+        
+         {
             /* <label htmlFor="correo">E-mail</label>
                                 <br/>
                                 <input type= "text" id="correo" name="correo" placeholder="correo electronico"></input> */
         } <
-        Input nombre = "Correo Electronico"
-        place = "pepito@email.com" > < /Input>
+        <Input nombre = "Correo Electronico"
+        <placeholder = "pepito@email.com" > </Input>
 
 
-        <
-        /div> <
-        div >
-        <
-        label htmlFor = "contraseña" > Contraseña < /label> <
-        br / >
-        <
-        input type = "pasword"
+         <div>
+        <label htmlFor = "contraseña" > Contraseña </label> 
+        
+        </div>
+
+
+        <input type = "pasword"
         id = "contraseña"
         name = "contraseña"
-        placeholder = "" > < /input>  <
-        Input nombre = "Ingrese Contraseña"
-        place = "***" > < /Input> <
-        /div> <
-        link className = "registrar-login"
-        to = "/Login" > Login < /link> <
-        button type = "submit" > Iniciar Sesion < /button> 
+        <placeholder = "" > </input>  <Input nombre = "Ingrese Contraseña"
+
+        place = "***" > </Input> </div> <
+       <link className = "registrar-login"
+        to = "/Login" > Login < /link> <button type = "submit" > Iniciar Sesion </button> 
+        
         </Fragment>
+
+        </link>
+}
+)
 
     )
 }

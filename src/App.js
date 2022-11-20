@@ -1,11 +1,11 @@
 import React from 'react';
-import Login from './UI/components/Login';
+import Login from './UI/components/formulario';
 import Inicio from './UI/components/Inicio';
 
 
 function App() {
   return (
-    <div>
+    <div className='App'>
       <Login></Login>
     </div>
   )

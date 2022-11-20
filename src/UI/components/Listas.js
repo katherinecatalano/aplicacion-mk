@@ -6,3 +6,4 @@ export const savePersonName = (name) => {
     addDoc(collection(db, 'persons'), { name });
 
 }
+
