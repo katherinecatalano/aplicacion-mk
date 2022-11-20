@@ -7,7 +7,7 @@ export default class Inicio extends Component {
 
     logout() {
         /*cierro sesion*/
-        firebaseConfig.auth().signOut();
+        FirebaseApp.auth().signOut();
     }
     render() {
         return ( <
