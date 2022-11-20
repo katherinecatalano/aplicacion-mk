@@ -13,9 +13,7 @@ export default class Inicio extends Component {
         return ( <
             div >
             <
-            h1 > Pantalla inicio, crear incidencia < /h1> <
-            button onClick = { this.logout } > Cerrar sesion < /button> < /
-            div >
+            h1 > Pantalla inicio, crear incidencia < /h1> <button onClick = { this.logout } > Cerrar sesion </button > < /div>
         );
     }
 
