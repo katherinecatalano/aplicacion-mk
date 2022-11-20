@@ -1,5 +1,5 @@
 import React from 'react';
-import Login from './UI/components/formulario';
+import Login from './UI/components/Formulario';
 import Inicio from './UI/components/Inicio';
 
 
