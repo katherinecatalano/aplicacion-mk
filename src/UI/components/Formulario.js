@@ -1,21 +1,24 @@
-import {useForm}  from "react-hook-form"
+import { useForm } from "react";
 
 
 
 const Formulario = () => {
 
 
-    const { register }  = useForm ();
+    const { register } = useForm();
 
 
 
-    return <div>
-        <h2> Formulario</h2>
-        <form>
+    return <div >
+        <
+        h2 > Formulario < /h2> <
+        form >
 
-        </form>
+        <
+        /form>
 
-    </div>
+    <
+    /div>
 }
 
 export default Formulario;
