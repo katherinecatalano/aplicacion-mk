@@ -13,11 +13,10 @@ function Registroincidencia() {
 
     }
 
-    useEffect(effect)=> {
+    useEffect(effect() => {
         getPersonsData();
 
-    
-    }, deps: []
+    }, deps: [])
 
     const getPersonsData = async() {
         const p = await getPersons();
@@ -26,9 +25,14 @@ function Registroincidencia() {
 
     }
 
-    return ( 
-        
-    
+    return ( <
+        div className = "incidencia" >
+        <
+        input type = "text"
+        onChange = { e => setPersonName(e.target.value) }
+        /> <button onClick={savePerson}>Salvar</button >
+        <
+        /div>
     );
 }
 
