@@ -1,37 +1,39 @@
 import React from "react";
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { savePersonName } from 'Listas';
+import { createRoutesFromChildren } from "react-router-dom";
 
 function Registroincidencia() {
 
-    const [personName, setPersonName] = useState(initialState null);
+    const [personName, setPersonName] = useState(initialState, null);
+    const [persons, setPersons] = useState(initialState, null);
 
     const savePerson = () => {
         savePersonName(personName);
+
+    }
+
+    useEffect(effect() => {
+        getPersonsData();
+
+    }, deps: [])
+
+    const getPersonsData = async() {
+        const p = await getPersons();
+        console.log(p.docs[0].data());
+        setPersons(p);
+
     }
 
     return ( <
-<<<<<<< HEAD
-    <h1> MK FIX </h1> <br/>
-        
-        <p> Registsro de incidencia </p>
-    )
-<ol> listas
-    <li>categoria</li>
-    <li></li>
-</ol>
-
-}
-=======
-        div classname = "incidencia" >
+        div className = "incidencia" >
         <
         input type = "text"
         onChange = { e => setPersonName(e.target.value) }
-        /> <button onclick = {}>Salvar</button >
+        /> <button onClick={savePerson}>Salvar</button >
         <
-        /div >
+        /div>
     );
 }
 
 export default Registroincidencia;
->>>>>>> 980de1f4e962f8c231941b1b4b7b6fc9a7ea400d
