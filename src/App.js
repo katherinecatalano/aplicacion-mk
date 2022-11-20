@@ -16,5 +16,21 @@ class App extends Component {
     }
     authListener() {
         /*se comprueba si el usuario se logeo*/
+        FirebaseApp.auth().onAuthStateChanged((user) => {
+            if (user) {
+                /** usuario logeado*/
+                this.setState({ user });
+            } else {
+                /**usuario no logeado */
+                this.setState({ user: null });
+            }
+        });
+
+    }
+    render() {
+        return ( <
+            div className = 'App' > { this.state.user ? ( < home / > ) : ( < Login / > ) } <
+            /div>
+        );
     }
 }
