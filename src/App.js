@@ -1,14 +1,20 @@
-import React from 'react';
+import React, { Component } from 'react';
 import Login from './UI/components/Formulario';
 import Inicio from './UI/components/Inicio';
+import { FirebaseApp } from 'firebase/app';
 
+class App extends Component {
 
-function App() {
-  return (
-    <div className='App'>
-      <Login></Login>
-    </div>
-  )
+    state = {
+        user: {}
+    }
+    constructor(props) {
+        super(props);
+    }
+    componentDidMount() {
+        this.authListener();
+    }
+    authListener() {
+        /*se comprueba si el usuario se logeo*/
+    }
 }
-
-export default App;
