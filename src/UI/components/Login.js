@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import firebase from '/firebase';
+import { FirebaseApp } from "firebase/app";
 
 
 export default class Login extends Component {
@@ -8,8 +8,6 @@ export default class Login extends Component {
 
     constructor(props) {
         super(props);
-        //el enlace es para que this funcione y vuleva el dato*/
-
         this.login = this.login.bind(this);
         this.signup = thi.signup.bind(this);
     }
@@ -19,14 +17,65 @@ export default class Login extends Component {
         var miusuario = this.usuario.current.value;
         var micontraseña = this.contraseña.current.value;
 
-        firebase
+        firebaseConfig
             .auth()
             .createUserwithEmailAndPassword(miusuario, micontraseña)
             .then(u => {})
+            .catch(function(error) {
+                console.log(error);
+
+            });
+    }
+
+    signup(e) {
+        e.preventDefault();
+        var miusuario = this.usuario.current.value;
+        var micontraseña = this.contraseña.current.value;
+
+        firebaseConfig
+            .auth()
+            .createUserwithEmailAndPassword(miusuario, micontraseña)
+            .then(u => {})
+            .catch(function(error) {
+                console.log(error);
+
+            });
+    }
+
+    render() {
+        return ( <
+                div >
+                <
+                form >
+                <
+                div >
+                <
+                label htmlFor = "exampleInputEmail" > Correo Electronico: < /label> <
+                input type = "email"
+                name = "email"
+                id = "exampleInputEmail"
+                ref = { this.usuario } > < /input> < /
+                div >
+                <
+                div >
+                <
+                label htmlFor = "exampleInputPassword" > Contraseña: < /label>  <
+                input type = "password"
+                name = "password"
+                id = "exampleInputPassword"
+                ref = { this.contraseña } > < /input> < /
+                div > <
+                button type = "submit"
+                onClick = { this.login } > Login < /button> <
+                button onClick = { this.signup } > Registrarse < /button>
+
+                <
+                /form> < /
+                div >
+            ):
 
     }
 
-};
 }
 
-}
+export default Login;
