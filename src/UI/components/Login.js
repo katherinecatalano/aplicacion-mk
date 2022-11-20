@@ -17,7 +17,7 @@ export default class Login extends Component {
         var miusuario = this.usuario.current.value;
         var micontraseña = this.contraseña.current.value;
 
-        firebaseConfig
+        FirebaseApp
             .auth()
             .createUserwithEmailAndPassword(miusuario, micontraseña)
             .then(u => {})
@@ -32,7 +32,7 @@ export default class Login extends Component {
         var miusuario = this.usuario.current.value;
         var micontraseña = this.contraseña.current.value;
 
-        firebaseConfig
+        FirebaseApp
             .auth()
             .createUserwithEmailAndPassword(miusuario, micontraseña)
             .then(u => {})
