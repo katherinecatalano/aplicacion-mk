@@ -1,5 +1,5 @@
 import React from "react";
-
+import React from "Inicio";
 
 function pantallainicio() {
   return (
