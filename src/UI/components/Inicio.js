@@ -1,13 +1,12 @@
 import React, { Component } from "react";
-import { FirebaseApp } from "firebase/app";
-import { fireEvent, render } from "@testing-library/react";
+import firebaseConfig from './FirebaseConfig';
 
 
 export default class Inicio extends Component {
 
     logout() {
         /*cierro sesion*/
-        FirebaseApp.auth().signOut();
+        firebaseConfig.auth().signOut();
     }
     render() {
         return ( <
