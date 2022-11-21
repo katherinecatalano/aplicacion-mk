@@ -1,15 +1,15 @@
 import React, { Component } from "react";
-import { FirebaseApp } from "firebase/app";
+import firebaseConfig from 'FirebaseConfig';
 
 
 export default class Login extends Component {
-    usuario: React.createRef();
-    contraseña: React.createRef();
+    usuario = React.createRef();
+    contraseña = React.createRef();
 
     constructor(props) {
         super(props);
         this.login = this.login.bind(this);
-        this.signup = thi.signup.bind(this);
+        this.signup = this.signup.bind(this);
     }
 
     login(e) {
@@ -17,14 +17,15 @@ export default class Login extends Component {
         var miusuario = this.usuario.current.value;
         var micontraseña = this.contraseña.current.value;
 
-        FirebaseApp
+        firebaseConfig 
             .auth()
-            .createUserwithEmailAndPassword(miusuario, micontraseña)
+            .singInWithEmailAndPassword(miusuario, micontraseña)
             .then(u => {})
             .catch(function(error) {
                 console.log(error);
 
             });
+        
     }
 
     signup(e) {
@@ -32,14 +33,15 @@ export default class Login extends Component {
         var miusuario = this.usuario.current.value;
         var micontraseña = this.contraseña.current.value;
 
-        FirebaseApp
+        firebaseConfig
             .auth()
-            .createUserwithEmailAndPassword(miusuario, micontraseña)
+            .createUserWithEmailAndPassword(miusuario, micontraseña)
             .then(u => {})
             .catch(function(error) {
                 console.log(error);
 
             });
+       
     }
 
     render() {
@@ -72,7 +74,7 @@ export default class Login extends Component {
                 <
                 /form> < /
                 div >
-            ):
+            );
 
     }
 
