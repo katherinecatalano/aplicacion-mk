@@ -1,10 +1,9 @@
 import React from 'react'
 
-export function Inicio() {
+ export function Registrarse() {
   return (
     <div>
-        Inicio
-      
+      Registrarse
     </div>
   )
 }
