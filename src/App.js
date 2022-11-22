@@ -1,11 +1,11 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import { Login } from "./components/Login";
-import { Registrarse } from "./components/Registrarse";
-import { Inicio } from "./components/Inicio";
-import { ProtectedRoute } from "./components/ProtectedRoute";
+import { Login } from "./UI/components/Login"
+import { Registrarse} from "./UI/components/Registrarse";
+import { Inicio } from "./UI/components/Inicio";
+import { ProtectedRoute } from "./UI/components/ProtectedRoute";
 
-import { AuthProvider } from "./context/AuthContext";
+import { AuthProvider } from "./context/Authcontext";
 
 function App() {
   return (
@@ -17,11 +17,11 @@ function App() {
             path="/"
             element={
               <ProtectedRoute>
-                <Home />
+                <Inicio />
               </ProtectedRoute>
             }
           />
-          <Route path="/register" element={<Register />} />
+          <Route path="/regisrarse" element={<Registrarse />} />
         </Routes>
       </AuthProvider>
     </div>
