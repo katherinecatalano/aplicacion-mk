@@ -6,7 +6,7 @@ export function AuthProvider({children}){
 
     /**todos los objetos hijos van a aparecer en const */
     const user = {
-        login: true
+        login: true,
     }
 
     return(
@@ -15,5 +15,5 @@ export function AuthProvider({children}){
             {children}
     
         </context.Provider>
-    )
+    );
 }
