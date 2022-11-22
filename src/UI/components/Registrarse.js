@@ -24,8 +24,8 @@ export function Registrarse (){
   }catch(error){
 
   }
-  signup(user.email, user.password)
- }
+  signup(user.email, user.password); 
+}
   return(
 
     <form onSubmit={handleSubmit}>
