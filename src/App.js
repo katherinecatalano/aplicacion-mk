@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from 'react';
 import './App.css';
 import {Formulario, Label, ContenedorTerminos, ContenedorBotonCentrado, Boton, MensajeExito, MensajeError} from './elementos/Formulario';
@@ -158,5 +159,34 @@ const App = () => {
   
        );
        }
+=======
+
+import {Routes, Route} from 'react-router-dom';
+import { Inicio } from './UI/components/Inicio';
+import {Login} from './UI/components/Login';
+import {Registrarse} from './UI/components/Registrarse';
+import {AuthProvider} from './context/Authcontext';
+
+
+
+function App() {
+
+  return(
+
+    /**Este div solo le da color a todas las pantallas */
+   <div className="bg-slate-300 h-screen text-white flex">
+    <AuthProvider>
+       <Routes>
+        <Route path="/" element={<Inicio/>}/>
+        <Route path="/login" element= {<Login/>}/>
+        <Route path="/registrarse" element={<Registrarse/>}/>
+      
+    </Routes>
+    </AuthProvider>
+   </div>
+  
+  )
+}
+>>>>>>> 478bedb4a8f57080d52f64ea665067a2778c3a71
 
 export default App;

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { Formulario } from './Formulario';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -163,3 +164,5 @@ export {
 
 
 export default Formulario;
+=======
+>>>>>>> 478bedb4a8f57080d52f64ea665067a2778c3a71
