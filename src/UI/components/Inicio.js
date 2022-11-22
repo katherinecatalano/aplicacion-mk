@@ -1,5 +1,8 @@
+import { useAuth } from "../../context/Authcontext";
+
 
 export function Inicio() {
+
 
   return (
 
@@ -7,5 +10,5 @@ export function Inicio() {
         Inicio
       
     </div>
-  );
+  )
 }
