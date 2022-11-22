@@ -1,7 +1,6 @@
 import React from "react";
 import { useState, useEffect } from 'react';
 import { savePersonName } from 'Listas';
-import { createRoutesFromChildren } from "react-router-dom";
 
 function Registroincidencia() {
 
@@ -16,7 +15,12 @@ function Registroincidencia() {
     useEffect(effect() => {
         getPersonsData();
 
+<<<<<<< HEAD
+    
+    } deps: []
+=======
     }, deps: [])
+>>>>>>> f1f42937e861173277116389e3b6af6d12c18e12
 
     const getPersonsData = async() {
         const p = await getPersons();
