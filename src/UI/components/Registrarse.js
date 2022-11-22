@@ -1,20 +1,34 @@
 import { useState } from "react";
+import { useAuth } from "../../context/Authcontext";
+import { useNavigate } from "react-router-dom";
 
 export function Registrarse (){
-
-const [user, setUser] = useState({
-  email:'',
-  password:'',
+  const [user, setUser] = useState({
+  email:"",
+  password:"",
 });
 
+ const { signup }  = useAuth()
+ const navigate = useNavigate()
 
- const handleChange = (e) => {
-  console.log(e.target.name, e.target.value);
- }
+ const handleChange = ({target: {name,value}}) => 
+  setUser({...user, [name]: value})
+ 
+ const handleSubmit = e => {
 
+  e.preventDefault()
+  try{
+    signup(user.email, user.password)
+    navigate('/')
+
+  }catch(error){
+
+  }
+  signup(user.email, user.password); 
+}
   return(
 
-    <form>
+    <form onSubmit={handleSubmit}>
       <label htmlFor="email">Email:</label>
       <input type="email" name="email" placeholder="youremail@company.ltd"
       onChange={handleChange}

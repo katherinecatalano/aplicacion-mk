@@ -1,12 +1,29 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import { Route, Routes } from "react-router-dom";
+import { Login } from "./components/Login";
+import { Registrarse } from "./components/Registrarse";
+import { Inicio } from "./components/Inicio";
+import { ProtectedRoute } from "./components/ProtectedRoute";
 
-import Formulario from './components/Formulario';
+import { AuthProvider } from "./context/AuthContext";
 
 function App() {
   return (
-    <div className="App">
-      <Formulario />
+    <div className="bg-slate-300 text-black h-screen flex text-white">
+      <AuthProvider>
+        <Routes>
+          <Route path="/login" element={<Login />} />
+          <Route
+            path="/"
+            element={
+              <ProtectedRoute>
+                <Home />
+              </ProtectedRoute>
+            }
+          />
+          <Route path="/register" element={<Register />} />
+        </Routes>
+      </AuthProvider>
     </div>
   );
 }
