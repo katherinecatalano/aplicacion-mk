@@ -1,9 +1,14 @@
-import { createContext } from "react";
+import { createContext, useContext } from "react";
 
-const context = createContext();
+export const authContext = createContext();
+
+export const useAuth = () => {
+  const context = useContext(authContext)
+  return context
+
+}
 
 export function AuthProvider({children}){
-
     /**todos los objetos hijos van a aparecer en const */
     const user = {
         login: true,
@@ -11,9 +16,9 @@ export function AuthProvider({children}){
 
     return(
         /** El provider sirve para despues exportar los componentes*/
-        <context.Provider value={{user}}>
+        <authContext.Provider value={{user}}>
             {children}
     
-        </context.Provider>
+        </authContext.Provider>
     );
 }
